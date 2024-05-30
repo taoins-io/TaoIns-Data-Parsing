@@ -1,0 +1,42 @@
+[db]
+host = "http://127.0.0.1"
+port = "3306"
+user_name = "test"
+password = "test"
+database = "tao"
+
+[redis]
+address = "http://127.0.0.1:6379"
+db = 0
+
+[log]
+path ="./logs"
+name = "data-pull"
+error = "error.log"
+warn =  "warn.log"
+info =  "info.log"
+debug = "debug.log"
+max_size = 300
+max_backups = 7
+max_age= 7
+level = "debug"
+
+[task]
+#event
+chain_event_data_cron ="@every 2s"
+chain_block_cron ="@every 12s"
+#ChainClient
+chain_client_cron ="@every 5m"
+#chainBlock
+monitor_block_cron = "@every 5m"
+
+[chain]
+#Starting block height, the configuration is 1 block less than the actual value.
+begin_block = 2568761
+#A block height in seconds
+second_every_block = 12
+#Bittensor Data pull address
+http_addr = ["http://127.0.0.1:3000"]
+
+[server]
+port =":18882"
