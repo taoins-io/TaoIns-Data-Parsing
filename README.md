@@ -1,4 +1,9 @@
-# TaoIns Protocol
+# TaoIns Data Parsing
+
+Docs: https://taoins.io/
+
+
+## About TaoIns Protocol
 
 The TaoIns protocol is an innovative asset standard protocol on BitTensor. Since BitTensor doesnʼt have smart contracts or other type running environments for asset issuing, we intend to define an asset standard to embed the asset creations and operations and included the content into BitTensor blockchain.
 
